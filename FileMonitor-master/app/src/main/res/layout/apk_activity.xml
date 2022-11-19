@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cotton"
+    android:scrollbars="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/apk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="false"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_toEndOf="@+id/pack_name"
+                android:text="@string/apkname"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/applabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/apk"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_weight="0.3"
+                app:layout_constraintEnd_toStartOf="@+id/package_name"
+                app:layout_constraintStart_toStartOf="@+id/apk"
+                app:layout_constraintTop_toBottomOf="@+id/apk" />
+
+            <TextView
+                android:id="@+id/pack_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:text="@string/package_name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/apk"
+                app:layout_constraintTop_toTopOf="@+id/apk" />
+
+            <TextView
+                android:id="@+id/package_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pack_name"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.3"
+                android:paddingEnd="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/pack_name"
+                app:layout_constraintTop_toBottomOf="@+id/pack_name" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/app_version"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+        <TextView
+            android:id="@+id/version_name"
+            android:layout_width="27dp"
+            android:layout_height="26dp"
+            android:layout_below="@+id/version"
+            android:layout_marginTop="8dp"
+            android:paddingStart="24dp"
+            app:layout_constraintStart_toStartOf="@+id/version"
+            app:layout_constraintTop_toBottomOf="@+id/version"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/dpermissions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/dangerous_permissions"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/version"
+            app:layout_constraintTop_toBottomOf="@+id/version_name" />
+
+        <TextView
+            android:id="@+id/req_dpermission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dpermissions"
+            android:layout_marginTop="8dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="@android:color/holo_red_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/dpermissions"
+            app:layout_constraintTop_toBottomOf="@+id/dpermissions" />
+
+        <TextView
+            android:id="@+id/permissions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/req_dpermission"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/other_android_permissions"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/dpermissions"
+            app:layout_constraintTop_toBottomOf="@+id/req_dpermission" />
+
+        <TextView
+            android:id="@+id/req_permission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/permissions"
+            android:layout_marginTop="8dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/permissions" />
+
+        <TextView
+            android:id="@+id/path_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/req_permission"
+            android:layout_marginTop="16dp"
+            android:text="@string/path_info"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/permissions"
+            app:layout_constraintTop_toBottomOf="@+id/req_permission" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/path"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/path_info"
+            android:layout_marginTop="8dp"
+            android:paddingStart="24dp"
+            app:layout_constraintStart_toStartOf="@+id/path_info"
+            app:layout_constraintTop_toBottomOf="@+id/path_info">
+
+
+            <TextView
+                android:id="@+id/tvpath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/and_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/path"
+            android:layout_marginStart="80dp"
+            android:text="@string/android_req_version"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/version"
+            app:layout_constraintTop_toTopOf="@+id/version" />
+
+        <TextView
+            android:id="@+id/andversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/and_version"
+            android:layout_marginTop="8dp"
+            android:paddingStart="24dp"
+            app:layout_constraintStart_toStartOf="@+id/and_version"
+            app:layout_constraintTop_toBottomOf="@+id/and_version" />
+
+        <TextView
+            android:id="@+id/installed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/andversion"
+            android:layout_marginTop="16dp"
+            android:text="@string/installed"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/path_info"
+            app:layout_constraintTop_toBottomOf="@+id/path" />
+
+        <TextView
+            android:id="@+id/insdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/installed"
+            android:layout_marginTop="8dp"
+            android:paddingStart="24dp"
+            app:layout_constraintStart_toStartOf="@+id/installed"
+            app:layout_constraintTop_toBottomOf="@+id/installed" />
+
+        <TextView
+            android:id="@+id/modified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/insdate"
+            android:text="@string/modified"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/and_version"
+            app:layout_constraintTop_toTopOf="@+id/installed" />
+
+        <TextView
+            android:id="@+id/last_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/modified"
+            android:layout_marginTop="8dp"
+            android:paddingStart="24dp"
+            app:layout_constraintStart_toStartOf="@+id/modified"
+            app:layout_constraintTop_toBottomOf="@+id/modified" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">FileMonitor</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="n_mero_de_eventos">Número de eventos</string>
+    <string name="path">Path</string>
+    <string name="clean_all_displayed_events">Clean all displayed events</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="filter_btn">filter_btn</string>
+    <string name="applist_btn">Application List Button</string>
+    <string name="save_btn">Save Button</string>
+    <string name="settings_btn">Settings Button</string>
+    <string name="show_all_installed_apps">Show all installed apps</string>
+    <string name="textview">TextView</string>
+    <string name="todo">TODO</string>
+    <string name="apkname">apkname</string>
+    <string name="package_name">package_name</string>
+    <string name="app_version">App Version</string>
+    <string name="other_android_permissions">Other Android Permissions</string>
+    <string name="dangerous_permissions">Dangerous Permissions</string>
+    <string name="path_info">Path Info</string>
+    <string name="modified">Modified</string>
+    <string name="installed">Installed</string>
+    <string name="android_req_version">Android Req. Version</string>
+    <string name="event_type">event type</string>
+    <string name="hour_and_day">hour and day</string>
+    <string name="path_of_event">path_of event</string>
+    <string name="path_of_event_org_row">path_of event</string>
+    <string name="num">num</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="pepe">Notificaciones</string>
+    <string name="settings_button">settings_button</string>
+    <string name="sistema_asegurado">Sistema asegurado</string>
+    <string name="asegurar_sistema_speakeable">Asegurar sistema</string>
+    <string name="apps_instaladas_antes_de_monitorizar">Apps instaladas antes de monitorizar:</string>
+    <string name="apps_instaladas_despu_s_de_monitorizar">Apps instaladas después de monitorizar:</string>
+    <string name="detection_ready">Detection Ready</string>
+</resources>

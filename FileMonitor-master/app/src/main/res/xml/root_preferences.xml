@@ -1,0 +1,36 @@
+ <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Opciones de guardado">
+
+        <EditTextPreference
+            app:key="path"
+            app:title="Ruta del archivo"
+            app:defaultValue="@string/path_default_value"
+            app:maxLines="1"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Notificaciones">
+
+        <SwitchPreferenceCompat
+            app:key="notifications"
+            app:title="Envío de alertas"
+            app:defaultValue="@string/notifications_default_value"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Archivos de prueba">
+
+        <SwitchPreferenceCompat
+            app:key="test_files"
+            app:title="Cargar archivos de prueba"
+            app:defaultValue="@string/test_files_default_value"
+            app:summaryOff="No se generan archivos en la tarjeta SD"
+            app:summaryOn="Se generan archivos en la targeta SD"
+            />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
